@@ -1,0 +1,28 @@
+:root {
+    --purple: rgb(53, 6, 53);
+};
+
+header {
+    display:flex;
+    justify-content: space-between;
+}
+
+div {
+    align-content: center;
+    text-align: center;
+    display: block;
+    margin: 5rem auto;
+    max-width: 650px;
+}
+
+button {
+    background-color: var(--purple);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#scores {
+    display: flex;
+}
