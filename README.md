@@ -1,5 +1,11 @@
 # 04 Web APIs: Code Quiz
 
+For this homework, I created 4 pages that function as the framework for a quiz that contains a Home, Quiz, End Page, and High Scores.
+
+The javascript uses questions objects to randomly sort the questions and give CSS effects on correct/incorrect answers. There is also a progress bar and score counter.
+
+The setTimeout interval wasn't working for me so I left it as a basic counter. I hope to continue working on this in the future.
+
 ## Your Task
 
 At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
