@@ -1,0 +1,85 @@
+:root {
+    --purple: rgb(63, 0, 63);
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--purple)
+}
+
+.choice-container {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    background: var(--purple);
+    color: white;
+    min-width: 20rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 5px 0;
+}
+
+.choice-prefix {
+    padding: 1rem;
+    color: white;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.correct {
+    background: green;
+}
+
+.incorrect {
+    background: red;
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hud-item {
+    min-width: 5rem;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+    align-self: center;
+    justify-content: center;
+}
+
+.hudMain {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 5px solid green;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: green;
+    width: 0%;
+}
+
+@media screen and (max-width: 760px) {
+    .choice-container {
+        min-width: 10rem;
+    }
+}

@@ -9,43 +9,25 @@
     <link rel="stylesheet" href="./Assets/style/style.css">
 </head>
 
+
+<body>
     <header>
-        <button id="scores">View Highscores</button>
         <span id="timer"></span>
     </header>
-<body>
-    <main>
-            <div id="Page1" class="page" style="">
+    <main class="container">
+            <div id="home" class="flex-column flex-center">
                 <h1>Coding Quiz Challenge</h1>
                 <p>Try to answer the following code-related questions within the time
                     limit. Keep in mind that incorrect answers will penalize your 
                     score/time by ten seconds!
                 </p>
-                <button id="start">Start Quiz</button>
-            </div>
-            <div id="Page2" class="page" style="display:none">
-                Question 1
-            </div>
-            <div id="Page3" class="page" style="display:none">
-                Question 2
-            </div>
-            <div id="Page4" class="page" style="display:none">
-                Question 3
-            </div>
-            <div id="Page5" class="page" style="display:none">
-                Question 4
-            </div>
-            <div id="Page6" class="page" style="display:none">
-                Question 5
-            </div>
-            <div id="Page7" class="page" style="display:none">
-                Your Score
-            </div>
-            <div id="scores" class="page" style="display:none">
-                High Scores
+                <a href="game.html" class="btn">Start Quiz</a>
+                <a href="highscore.html" class="highscore-btn">High Scores</a>
             </div>
     </main>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="./Assets/js/script.js"></script>
 </body>
 </html>

@@ -1,28 +1,105 @@
 :root {
     --purple: rgb(53, 6, 53);
+    --gold: gold;
 };
 
-header {
-    display:flex;
-    justify-content: space-between;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
 }
 
-div {
-    align-content: center;
-    text-align: center;
-    display: block;
-    margin: 5rem auto;
-    max-width: 650px;
+h1 {
+    font-size: 4rem;
+    color: tomato;
+    margin-bottom: 3rem;
 }
 
-button {
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80rem
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
     background-color: var(--purple);
     color: white;
     border-radius: 10px;
-    padding: 5px;
+    padding: 1rem;
     margin: 5px;
+    text-decoration: none;
 }
 
-#scores {
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 5px 0;
+}
+
+.highscore-btn {
+    background: var(--gold);    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.highscore-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 5px 0;
+}
+
+.visible {
+    display: block;
+}
+
+/*end page css*/
+
+.end-form-container {
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+#saveScoreBtn {
+    border: none;
 }
